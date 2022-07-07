@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<SplitPane dividerPositions="0.55" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="controller.RandonneeSubController">
+    <ScrollPane fitToHeight="true" fitToWidth="true">
+        <VBox>
+            <TitledPane animated="false" text="Informations générales :" VBox.vgrow="ALWAYS">
+                <ScrollPane>
+                    <VBox prefHeight="160.0" VBox.vgrow="ALWAYS">
+                        <HBox>
+                            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true">
+                                <Image url="@../icone.png"/>
+                            </ImageView>
+                            <Label alignment="BASELINE_LEFT" prefHeight="40.0" text="Titre :"
+                                   underline="true">
+                                <font>
+                                    <Font name="Comic Sans MS" size="15.0"/>
+                                </font>
+                                <padding>
+                                    <Insets left="5.0"/>
+                                </padding>
+                            </Label>
+                            <Pane HBox.hgrow="ALWAYS"/>
+                            <Label fx:id="titre" prefHeight="40.0" text="Non Renseigné"
+                                   HBox.hgrow="ALWAYS">
+                                <font>
+                                    <Font name="Comic Sans MS" size="15.0"/>
+                                </font>
+                            </Label>
+                        </HBox>
+                        <HBox HBox.hgrow="ALWAYS">
+                            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true"
+                                       preserveRatio="true">
+                                <Image url="@../images/hourglass.png"/>
+                            </ImageView>
+                            <Label alignment="BASELINE_LEFT" prefHeight="40.0" text="Durée :"
+                                   underline="true">
+                                <font>
+                                    <Font name="Comic Sans MS" size="15.0"/>
+                                </font>
+                                <padding>
+                                    <Insets left="5.0"/>
+                                </padding>
+                            </Label>
+                            <Pane HBox.hgrow="ALWAYS"/>
+                            <Label fx:id="duree" prefHeight="40.0" text="Non Renseignée"
+                                   HBox.hgrow="ALWAYS">
+                                <font>
+                                    <Font name="Comic Sans MS" size="15.0"/>
+                                </font>
+                            </Label>
+                        </HBox>
+                        <HBox VBox.vgrow="ALWAYS">
+                            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true">
+                                <Image url="@../images/distance.png"/>
+                            </ImageView>
+                            <Label alignment="BASELINE_LEFT" prefHeight="40.0" text="Distance :"
+                                   underline="true">
+                                <font>
+                                    <Font name="Comic Sans MS" size="15.0"/>
+                                </font>
+                                <HBox.margin>
+                                    <Insets left="5.0"/>
+                                </HBox.margin>
+                            </Label>
+                            <Pane HBox.hgrow="SOMETIMES"/>
+                            <Label fx:id="distance" prefHeight="40.0" text="Non Renseignée">
+                                <font>
+                                    <Font name="Comic Sans MS" size="15.0"/>
+                                </font>
+                            </Label>
+                        </HBox>
+                        <HBox VBox.vgrow="ALWAYS">
+                            <ImageView fx:id="imagediff" fitHeight="40.0" fitWidth="40.0"
+                                       pickOnBounds="true" preserveRatio="true">
+                            </ImageView>
+                            <Label alignment="BASELINE_LEFT" prefHeight="40.0" text="Difficulté :"
+                                   underline="true">
+                                <font>
+                                    <Font name="Comic Sans MS" size="15.0"/>
+                                </font>
+                                <padding>
+                                    <Insets left="5.0"/>
+                                </padding>
+                            </Label>
+                            <Pane HBox.hgrow="ALWAYS"/>
+                            <Label fx:id="difficulte" prefHeight="40.0" text="Non Renseignée">
+                                <font>
+                                    <Font name="Comic Sans MS" size="15.0"/>
+                                </font>
+                            </Label>
+                        </HBox>
+                        <HBox VBox.vgrow="ALWAYS">
+                            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true"
+                                       preserveRatio="true">
+                                <Image url="@../images/dep.png"/>
+                            </ImageView>
+                            <Label alignment="BASELINE_LEFT" prefHeight="40.0" text="Départ :"
+                                   underline="true">
+                                <font>
+                                    <Font name="Comic Sans MS" size="15.0"/>
+                                </font>
+                                <padding>
+                                    <Insets left="5.0"/>
+                                </padding>
+                            </Label>
+                            <Pane HBox.hgrow="ALWAYS"/>
+                            <Label fx:id="depart" prefHeight="40.0" text="Non Renseigné">
+                                <font>
+                                    <Font name="Comic Sans MS" size="13.0"/>
+                                </font>
+                            </Label>
+                        </HBox>
+                        <HBox VBox.vgrow="ALWAYS">
+                            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true"
+                                       preserveRatio="true">
+                                <Image url="@../images/arriv.png"/>
+                            </ImageView>
+                            <Label alignment="BASELINE_LEFT" prefHeight="40.0" text="Arrivée :"
+                                   underline="true">
+                                <font>
+                                    <Font name="Comic Sans MS" size="15.0"/>
+                                </font>
+                                <padding>
+                                    <Insets left="5.0"/>
+                                </padding>
+                            </Label>
+                            <Pane HBox.hgrow="ALWAYS"/>
+                            <Label fx:id="arrivee" prefHeight="40.0" text="Non Renseigné">
+                                <font>
+                                    <Font name="Comic Sans MS" size="13.0"/>
+                                </font>
+                            </Label>
+                        </HBox>
+                        <HBox VBox.vgrow="ALWAYS">
+                            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true"
+                                       preserveRatio="true">
+                                <Image url="@../images/updeni.png"/>
+                            </ImageView>
+                            <Label alignment="BASELINE_LEFT" prefHeight="40.0" text="Dénivelé + :"
+                                   underline="true" HBox.hgrow="ALWAYS">
+                                <font>
+                                    <Font name="Comic Sans MS" size="15.0"/>
+                                </font>
+                                <padding>
+                                    <Insets left="5.0"/>
+                                </padding>
+                            </Label>
+                            <Pane HBox.hgrow="SOMETIMES"/>
+                            <Label fx:id="denpos" prefHeight="40.0" text="Non Renseigné">
+                                <font>
+                                    <Font name="Comic Sans MS" size="15.0"/>
+                                </font>
+                            </Label>
+                        </HBox>
+                        <HBox VBox.vgrow="ALWAYS">
+                            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true"
+                                       preserveRatio="true">
+                                <Image url="@../images/downdeni.png"/>
+                            </ImageView>
+                            <Label alignment="BASELINE_LEFT" prefHeight="40.0" text="Dénivelé - :"
+                                   underline="true" HBox.hgrow="NEVER">
+                                <font>
+                                    <Font name="Comic Sans MS" size="15.0"/>
+                                </font>
+                                <padding>
+                                    <Insets left="5.0"/>
+                                </padding>
+                            </Label>
+                            <Pane HBox.hgrow="ALWAYS"/>
+                            <Label fx:id="denneg" prefHeight="40.0" text="Non Renseigné">
+                                <font>
+                                    <Font name="Comic Sans MS" size="15.0"/>
+                                </font>
+                            </Label>
+                        </HBox>
+                    </VBox>
+                </ScrollPane>
+            </TitledPane>
+            <TitledPane animated="false" expanded="false" text="Description :" VBox.vgrow="ALWAYS">
+                <Text fx:id="description" text="vide" textOrigin="CENTER">
+                    <font>
+                        <Font name="Comic Sans MS" size="15.0"/>
+                    </font>
+                </Text>
+            </TitledPane>
+            <TitledPane fx:id="titledPanePhotos" animated="false" expanded="false" text="Galerie Photo :">
+            </TitledPane>
+        </VBox>
+    </ScrollPane>
+    <SplitPane fx:id="carteEtGraphe"/>
+</SplitPane>

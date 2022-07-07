@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="100.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.261" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controller.ImportGPXController" fx:id="importVBOX">
+    <Label text="Entrer le lien du fichier d'extension '.gpx'">
+        <font>
+          <Font size="16.0"/>
+        </font>
+    </Label>
+    <TextField fx:id="tf">
+        <font>
+          <Font size="16.0"/>
+        </font>
+    </TextField>
+    <Button mnemonicParsing="false" text="Valider" onMouseClicked="#valide">
+        <font>
+          <Font size="16.0"/>
+        </font>
+    </Button>
+</VBox>
